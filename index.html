@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="p-3 flex bg-white justify-between items-center">
+      <a href="#" class="flex gap-2 items-center">
+        <img
+          class="object-cover max-w-12"
+          src="./assets/asset 0.png"
+          alt="Logo"
+        />
+        <span class="text-lg font-medium">ToDesktop</span>
+      </a>
+      <div id="nav-menu" class="hidden md:flex gap-12">
+        <a href="#" class="font-medium nav-item">Pricing</a>
+        <a href="#" class="font-medium nav-item">Docs</a>
+        <a href="#" class="font-medium nav-item">Change log</a>
+        <a href="#" class="font-medium nav-item">Blogs</a>
+        <a href="#" class="font-medium nav-item">Login</a>
+      </div>
+      <button class="hidden md:flex items-center gap-2 border border-grey-400 px-6 py-2 rounded-lg hover:border-grey-600">
+        <img src="./assets/asset 1.svg" alt="" />
+        <span>Electron Developer</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <button class="p-2 md:hidden" onclick="handleMenu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </body>
+</html>
