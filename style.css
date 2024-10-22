@@ -1,0 +1,10 @@
+body {
+  font-family: popins;
+}
+:root {
+  --primary-color: #3238f2; /* Custom primary color */
+}
+
+.nav-item:hover {
+  color: var(--primary-color);
+}
